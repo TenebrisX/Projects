@@ -1,0 +1,18 @@
+[flake8]
+max-line-length = 127
+extend-ignore = E203, E501, W503, W293, W291, W292, E261, E262
+exclude =
+    .git,
+    __pycache__,
+    venv,
+    env,
+    .venv,
+    migrations,
+    .github,
+    htmlcov,
+    .pytest_cache,
+    .mypy_cache
+
+per-file-ignores =
+    __init__.py:F401
+    */migrations/*.py:E501
